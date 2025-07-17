@@ -1,70 +1,103 @@
-# Getting Started with Create React App
+# 📝 ToDo List Full-Stack
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Projeto desenvolvido como teste prático, com uma aplicação de lista de tarefas (ToDo List) uitlizando **FastAPI (back-end)** e **React (front-end)**.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Funcionalidades
 
-### `npm start`
+- Adicionar tarefas
+- Listar todas as tarefas
+- Marcar tarefa como concluída
+- Remover tarefa da lista
+- Integração total entre front-end e back-end
+- Deploy em produção (Railway e Vercel)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tecnologias Utlizadas
 
-### `npm test`
+### Backend
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [FastAPI]
+- [Uvicorn] (https://www.uvicorn.org/)
+- [Python 3.10+] (https://www.python.org/)
+- Hospedagem: [Railway] (https://railway.app)
 
-### `npm run build`
+### Frontend
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [React] (https://reactjs.org)
+- [JavaScript (ES6+)]
+- Hospedagem: [Vercel] (https://vercel.com)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🧩 Como rodar o projeto localmente
 
-### `npm run eject`
+### Backend:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+# Clonar o repositório
+git clone https://github.com/annesilv4/ToDo-List-Fullstack.git
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Entrar na pasta do backend
+cd backend
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Criar ambiente virtual (Linux/Mac)
+python3 -m venv venv
+source venv/bin/activate
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Ou no Windows
+# python -m venv venv
+# venv\Scripts\activate
 
-## Learn More
+# Instalar as dependências
+pip install -r requirements.txt
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Rodar o servidor
+uvicorn main:app --reload
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Acesse
+http://localhost:8080
 
-### Code Splitting
+# Docs automáticas
+http://localhost:8080/docs
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
 
-### Analyzing the Bundle Size
+### Frontend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+# Entrar na pasta do front end
+cd frontend
 
-### Making a Progressive Web App
+# Instalar as dependências
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+# Rodar o projeto
+npm start
 
-### Advanced Configuration
+# Acesse
+http://localhost:3000
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## Links em Produção
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- API (Railway): https://todo-list-fullstack-production.up.railway.app
+- Frontend (Vercel): https://to-do-list-fullstack-rho.vercel.app
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 💡 Observações
+
+- O projeto utiliza um "banco de dados em memória" com uma lista de tarefas (não persistente).
+- O objetivo era desenvolver uma aplicação funcional do zero, com integração completa.
+- CORS configurado no FastAPI para permitir consumo via frontend hospedado.
+
+---
+
+## 👩‍💻 Desenvolvedora
+
+Anne Carolayne Barbosa da Silva
