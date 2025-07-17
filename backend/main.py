@@ -1,8 +1,8 @@
-from fastapi import FastAPI
+from fastapi import FastAPI # Importei o FAastAPI para criar a API
 from fastapi.middleware.cors import CORSMiddleware # Importei esse middleware para permitir o acesso de diferentes origens
-from fastapi import HTTPException
-from pydantic import BaseModel
-from typing import List
+from fastapi import HTTPException # Importei o HTTPException para tratar os erros
+from pydantic import BaseModel # Importei o BaseModel para definir os modelos de dados
+from typing import List # Importei List para trabalhar com listas de tarefas
 
 app = FastAPI()
 
